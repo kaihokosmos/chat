@@ -1,0 +1,7 @@
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ChatServer\obj\Debug\ChatServer.csprojResolveAssemblyReference.cache
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ChatServer\obj\Debug\ChatServer.pdb

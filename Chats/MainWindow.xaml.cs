@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using System.Windows;
 
 namespace Chats
@@ -10,6 +11,8 @@ namespace Chats
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		TcpClient client;
+
 		public MainWindow()
 		{
 			InitializeComponent();
@@ -20,8 +23,9 @@ namespace Chats
 			try
 			{
 				IPAddress ipAddress = IPAddress.Parse(IpAddressInput.Text); // Textbox
-				TcpClient client = new TcpClient();
-				client.Connect(ipAddress, 5000);
+				client = new TcpClient();
+				client.Connect(ipAddress, 5000); // klappt nur, wenn der Server gestartet ist
+				SendButton.IsEnabled = true;
 			}
 			catch (FormatException)
 			{
@@ -31,6 +35,17 @@ namespace Chats
 			{
 				MessageBox.Show("Server nicht erreichbar");
 			}
+		}
+
+		private void SendButton_Click(object sender, RoutedEventArgs e)
+		{
+			string messageText = MessageInput.Text;
+			MessageInput.Text = string.Empty;
+
+			NetworkStream stream = client.GetStream();
+
+			byte[] messageTextBytes = Encoding.ASCII.GetBytes(messageText);
+			stream.Write(messageTextBytes, 0, messageTextBytes.Length); // (Byte Buffer, Offset, Bufferlänge)
 		}
 	}
 }
