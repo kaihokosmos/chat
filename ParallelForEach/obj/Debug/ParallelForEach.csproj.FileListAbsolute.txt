@@ -1,0 +1,7 @@
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ParallelForEach\bin\Debug\ParallelForEach.exe.config
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ParallelForEach\bin\Debug\ParallelForEach.exe
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ParallelForEach\bin\Debug\ParallelForEach.pdb
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ParallelForEach\obj\Debug\ParallelForEach.csproj.CoreCompileInputs.cache
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ParallelForEach\obj\Debug\ParallelForEach.exe
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ParallelForEach\obj\Debug\ParallelForEach.pdb
+C:\Users\stefan.ploch\source\repos\Cs\LG\Chats\ParallelForEach\obj\Debug\ParallelForEach.csprojResolveAssemblyReference.cache

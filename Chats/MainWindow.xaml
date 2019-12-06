@@ -5,24 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chats"
         mc:Ignorable="d"
-        Title="SuperChat" Height="405.657" Width="828.976" FontFamily="Verdana" FontSize="14">
-	<Grid Margin="0,0,2,0">
+        Title="SuperChat" Height="465.657" Width="876.976" FontFamily="Verdana" FontSize="16">
+	<Grid Margin="0,0,2,0" >
 		<Grid.Background>
 			<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
 				<GradientStop Color="Black" Offset="1"/>
 				<GradientStop Color="#FFE0E5F4"/>
 			</LinearGradientBrush>
 		</Grid.Background>
-		<Label Content="IP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Verdana"/>
-		<TextBox x:Name="IpAddressInput" Padding="2" HorizontalAlignment="Left" Height="23" Margin="46,13,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120" FontFamily="Verdana"/>
-		<Button x:Name="ConnectButton" Content="Verbinden" HorizontalAlignment="Left" Margin="46,41,0,0" VerticalAlignment="Top" Width="120" FontFamily="Verdana" Click="ConnectButton_Click"/>
-		<TextBlock x:Name="ChatText" Padding="5" HorizontalAlignment="Left" Margin="46,66,0,0" TextWrapping="Wrap" Text="Bitte verbinden" VerticalAlignment="Top" Width="752" Height="223" FontFamily="Verdana">
-			<TextBlock.Background>
+		<Label Content="IP" HorizontalAlignment="Left" Margin="32,38,0,0" VerticalAlignment="Top" FontFamily="Verdana"/>
+		<TextBox x:Name="IpAddressInput" Padding="2" HorizontalAlignment="Left" Height="22" Margin="68,42,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120" FontFamily="Verdana"/>
+		<Button x:Name="ConnectButton" Content="Verbinden" HorizontalAlignment="Left" Margin="209,43,0,0" VerticalAlignment="Top" Width="120" FontFamily="Verdana" Click="ConnectButton_Click"/>
+		<ScrollViewer CanContentScroll ="True" Margin="72,102,43,96" Width="752">
+			<TextBlock x:Name="ChatText" Padding="5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bitte verbinden" VerticalAlignment="Top" Width="Auto"  FontFamily="Verdana">
+			</TextBlock>
+			<ScrollViewer.Background>
 				<ImageBrush ImageSource="hell03.jpg" />
-			</TextBlock.Background>
-		</TextBlock>
-		<TextBox x:Name="MessageInput" Padding="2" HorizontalAlignment="Left" Height="37" Margin="46,294,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="752" FontFamily="Verdana"/>
-		<Button IsEnabled="False" x:Name="SendButton" Content="Senden" HorizontalAlignment="Left" Margin="46,336,0,0" VerticalAlignment="Top" Width="119" FontFamily="Verdana" Click="SendButton_Click"/>
-
+			</ScrollViewer.Background>
+		</ScrollViewer>
+		<TextBox x:Name="MessageInput" Padding="2" HorizontalAlignment="Left" Height="38" Margin="72,344,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="752" FontFamily="Verdana"/>
+		<Button IsEnabled="False" x:Name="SendButton" Content="Senden" HorizontalAlignment="Left" Margin="72,386,0,0" VerticalAlignment="Top" Width="116" FontFamily="Verdana" Click="SendButton_Click"/>
+		<Label Content="Name" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="NameInput" HorizontalAlignment="Left" Height="22" Margin="68,12,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+		<Label Content="Online" HorizontalAlignment="Left" Margin="14,70,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="OnlineOutput" Content="0" HorizontalAlignment="Left" Margin="69,70,0,0" VerticalAlignment="Top"/>
 	</Grid>
 </Window>
